@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>聊天测试</title>
+</head>
+<body>
+<ul id="messages"></ul>
+<form action="">
+  <input id="input" autocomplete="off">
+  <button>发送</button>
+</form>
+
+<script src="/socket.io/socket.io.js"></script>script src="/socket.io/socket.io.js"></script>
+<script>script
+    e.preventDefault();e.preventDefault();e.preventDefault();e.preventDefault();const socket = io();const socket = io();const socket = io();const socket = io();
+li
+  const input = document.getElementById('input');const input = document.getElementById('input');const input = document.getElementById('input');const input = document.getElementById('input');
+  const messages = document.getElementById('messages');const messages = document.getElementById('messages');const messages = document.getElementById('messages');const messages = document.getElementById('messages');messages = document.getElementById('messages');
+
+  form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{form.addEventListener('submit',(e)=>{
+const
+    if(input.value){if(input.value){if(input.value){if(input.value){
+      socket.emit('chat message', input.value);socket.emit('chat message', input.value);socket.emit('chat message', input.value);socket.emit('chat message', input.value);
+      input.value='';input.value='';input.value='';input.value='';
+    }
+  })
+  socket.on('chat message',function(msg){socket.on('chat message',function(msg){socket.on('chat message',function(msg){socket.on('chat message',function(msg){
+    const li = document.createElement('li');const li = document.createElement('li');const li = document.createElement('li');const li = document.createElement('li');
+    li.textContent = msg;li.textContent = msg;li.textContent = msg;li.textContent = msg;
+    messages.appendChild(li);
+  })
+</script>
+</body>
+</html>
